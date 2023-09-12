@@ -3,8 +3,9 @@ const blob = document.getElementById("blob");
 window.onpointermove = ({ clientX, clientY }) =>
     blob.animate(
         { left: `${clientX}px`, top: `${clientY}px` },
-        { duration: 3000, fill: "forwards" }
+        { duration: 1500, fill: "forwards" }
     );
+
 $(function () {
     $(".navbar-icon").click(() => $(".navbar").toggleClass("active"));
 });
@@ -50,11 +51,30 @@ linksss.forEach((link) => {
     });
 });
 
-/* to get a cross icon when clicking bars icon in navbar */
+/* to get a cross icon when clicking bolt icon in navbar */
+// const navIcon = document.getElementById("nav-bars-icon");
+// navIcon.addEventListener("click", () => {
+//     navIcon.classList.toggle("bolt-icon");
+//     navIcon.classList.toggle("unbolt-icon");
+//     document.getElementById("nav-close-icon").classList.toggle("hide"); // Show/hide cross icon
+// });
+
+// const navIcon = document.getElementById("nav-bars-icon");
+
+// navIcon.addEventListener("click", () => {
+//   navIcon.classList.toggle("bolt-icon");
+//   navIcon.classList.toggle("unbolt-icon");
+// //   navIcon.classList.toggle("fa-bolt");
+// //   navIcon.classList.toggle("fa-bolt");
+//   document.getElementById("nav-close-icon").classList.toggle("hide");
+// });
+
+//working navbar show/hide button
+// currently navbar gayab ho rkha, wo figure out krke fir dekhte hai
 const navIcon = document.getElementById("nav-bars-icon");
 navIcon.addEventListener("click", () => {
-    navIcon.classList.toggle("fa-bars");
-    navIcon.classList.toggle("fa-times");
+    navIcon.classList.toggle("fa-solid");
+    navIcon.classList.toggle("fa-light");
     document.getElementById("nav-close-icon").classList.toggle("hide"); // Show/hide cross icon
 });
 
@@ -83,11 +103,28 @@ const jumbleLetters = (target) => {
         iteration += 1 / 3;
     }, 30);
 };
-document.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("mouseover", (event) => {
-        jumbleLetters(event.target);
-    });
-    link.addEventListener("mouseout", (event) => {
-        event.target.innerText = event.target.dataset.value;
-    });
+
+const link = document.querySelector("span.magic-text");
+link.addEventListener("mouseover", (event) => {
+    jumbleLetters(event.target);
 });
+link.addEventListener("mouseout", (event) => {
+    event.target.innerText = event.target.dataset.value;
+});
+
+// document.querySelectorAll("span").forEach((link) => {
+//     link.addEventListener("mouseover", (event) => {
+//         jumbleLetters(event.target);
+//     });
+//     link.addEventListener("mouseout", (event) => {
+//         event.target.innerText = event.target.dataset.value;
+//     });
+// });
+
+/* loader animation */
+// window.addEventListener("load", function () {
+//     setTimeout(function () {
+//         document.querySelector("body").classList.remove("load");
+//         document.querySelector("body").classList.add("loaded");
+//     }, 2000);
+// });

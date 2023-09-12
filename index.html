@@ -7,48 +7,239 @@
         <link rel="stylesheet" href="styles.css" />
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            href="https://cdn.jsdelivr.net/npm/line-awesome/dist/line-awesome/css/line-awesome.min.css"
+        />
+        <!-- <link
+            href="https://cdn.jsdelivr.net/gh/lakshits11/font-awesome-6-pro@main/fa_6.4.2.min.css"
+            rel="stylesheet"
+            type="text/css"
+        /> -->
+        <link
+            href="https://cdn.jsdelivr.net/gh/lakshits11/fontawesomepro@master/fontawesome-pro-6.4.2-web/css/all.min.css"
+            rel="stylesheet"
         />
         <title>Lakshit Somani</title>
+        <!-- href="https://cdn.jsdelivr.net/gh/aquawolf04/font-awesome-pro@5cd1511/css/all.css" -->
+        <!-- <link href="https://raw.githubusercontent.com/vanphonggiang/font-awesome-6-pro/main/css/all.min.css" -->
+        <!-- href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" -->
     </head>
 
     <body>
+        <!-- <div id="overlay">
+            <div class="loader"></div>
+        </div> -->
+
         <div id="blob"></div>
+
         <div id="blur"></div>
+
         <div class="navbar">
             <div class="navbar-links scrsm">
-                <a data-value="Home" class="scc" href="#">Home</a>
-                <a data-value="About" class="scc" href="#">About</a>
-                <a data-value="Projects" class="scc" href="#jnk">Projects</a>
-                <a data-value="Contact" class="scc" href="#">Contact</a>
+                <a data-value="Home" class="scc" href="#hero">Home</a>
+                <a data-value="About" class="scc" href="#about">About</a>
+                <a data-value="Projects" class="scc" href="#projects">Projects</a>
+                <a data-value="Contact" class="scc" href="#contact">Contact</a>
             </div>
             <div class="navbar-icon">
-                <i class="fas fa-bars" id="nav-bars-icon"></i>
-                <!-- Hamburger icon -->
-                <i class="fas fa-times" id="nav-close-icon"></i>
-                <!-- Cross icon (hidden by default) -->
+                <i class="fa-solid fa-bolt fa-beat" id="nav-bars-icon"></i>
+                <i class="fa-light fa-bolt fa-beat" id="nav-close-icon"></i>
             </div>
         </div>
-        <div class="c1">
+
+        <div class="social-links">
+            <!-- resume link -->
+            <a href="resume.pdf" target="_blank">
+                <i class="las la-file-alt"></i>
+            </a>
+            <a href="https://github.com/lakshits11" target="_blank">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lakshit-somani/" target="_blank">
+                <i class="lab la-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/_.pixelated/" target="_blank">
+                <i class="lab la-instagram"></i>
+            </a>
+            <div class="vertical-line"></div>
+        </div>
+
+        <div class="sticky-text">
+            <a href="mailto:example@example.com">lakshits11@gmail.com</a>
+            <div class="vertical-line-2"></div>
+        </div>
+
+        <div class="hero-section" id="hero">
             <div class="head-left">
                 <h1>
                     Hey, I'm<br />
-                    <span class="magic-text"> Lakshit Somani </span>
+                    <span data-value="Lakshit Somani" class="magic-text">
+                        Lakshit Somani
+                    </span>
                 </h1>
                 <h2>
-                    I am a web developer, coder, and designer, proficient in crafting
-                    robust and elegant solutions.
+                    I am a web developer, coder, and designer, proficient in crafting robust and elegant solutions.
                 </h2>
             </div>
             <div class="head-right">
-                <img
-                    src="./pfp.png"
-                    alt=""
-                />
+                <!-- <img src="./pfp.png" alt="" /> -->
+                <!-- <img class="heroImage" src="https://i.imgur.com/znzGaiI.jpeg" alt="" /> -->
+                <!-- <img class="heroImage" src="https://i.imgur.com/zAgX3Vj.jpeg" alt="" /> -->
+                <img class="heroImage" src="./prfp.webp" alt="" />
             </div>
         </div>
-        <div class="c2">jkj</div>
-        <div class="c3" id="jnk">jkfdvj</div>
+
+        <div class="span"></div>
+
+        <div class="about-section" id="about">
+            <div class="about-left">
+                <h2>About Me</h2>
+                <p>
+                    Hi there! My name is Lakshit Somani. I'm a self-taught developer with a passion for creative design
+                    and a strong grasp of various programming languages and tools. I excel at solving intricate problems
+                    and crafting effective solutions, and I'm known for my reliability, solid time management skills,
+                    and collaborative approach.
+                </p>
+                <p>
+                    As a proficient <em><b>full-stack developer</b></em> well-versed in the MERN stack, I've built a
+                    solid foundation in web technologies and have a deep love for coding. I have also been recognized as
+                    an <em><b>ET Campus Coding Star</b></em
+                    >, I've honed my competitive coding skills and become adept at solving complex algorithmic
+                    challenges. I'm committed to <em><b>delivering top-notch, user-friendly web solutions</b></em>, and I approach my
+                    work with a strong work ethic, attention to detail, and an insatiable thirst for knowledge. I'm
+                    eager to tackle new challenges, collaborate with talented professionals, and make a significant
+                    impact on any project.
+                </p>
+                <p>
+                    In my free time, I enjoy participating in coding competitions and honing my skills as a coder. I
+                    also enjoy creating personal projects, experimenting with new technologies, and contributing to
+                    open-source projects. I have also a deep passion for photography. Don't forget to check out my instagram :) 
+                    <!-- insert a smily -->
+
+                </p>
+                <p>
+                    If you'd like to learn more about me, or if you have a project you'd like to collaborate on, feel
+                    free to get in touch using the mail below. I'd love to hear from you!
+                </p>
+            </div>
+            <div class="about-right">
+                <img src="./skills.png" alt="Your Image" />
+            </div>
+
+            <!-- <img class="skills-image" src="./skills.png" alt="" /> -->
+            <!-- <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Competitive Coding</li>
+                    <li>Design</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="span"></div>
+
+        <div class="projects-section" id="projects">
+            <h1>Projects</h1>
+            <div class="project-cards">
+                <div class="project-card">
+                    <div class="cardContainer">
+                        <i class="fal fa-globe-pointer"></i>
+                        <h2>LinkedIn Clone</h2>
+                        <p>
+                            A LinkedIn Clone built using ReactJS and Firebase with features such as posting text as well
+                            as image/video and also integrated Google Sign-In. Fully cross-browser compatible and
+                            responsive.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/lakshits11/linkedin-clone" target="_blank">
+                                <i class="lab la-github"></i>
+                            </a>
+                            <a href="https://linkedin-clone-ls.web.app/" target="_blank">
+                                <i class="las la-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="cardContainer">
+                        <i class="fal fa-gamepad-modern"></i>
+                        <h2>Wordle Clone</h2>
+                        <p>
+                            A completely revamped and improved Wordle website. It has a captivating frontend with
+                            gradient text effects. Used React to craft and fine-tune the game logic.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/lakshits11/wordle-clone" target="_blank">
+                                <i class="lab la-github"></i>
+                            </a>
+                            <a href="https://wordlepro.vercel.app/" target="_blank">
+                                <i class="las la-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="cardContainer">
+                        <i class="fal fa-code"></i>
+                        <h2>Image Cryptography</h2>
+                        <p>
+                            Made a custom algorithm to hide secret text messages within images. Also implemented an
+                            optional secure messaging feature with AES-256 encryption. Developed a fully terminal-based
+                            application for ease of use.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/lakshits11/image-cryptography" target="_blank">
+                                <i class="lab la-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="cardContainer">
+                        <i class="fal fa-palette"></i>
+                        <h2>VS Code Themes</h2>
+                        <p>
+                            Meticulously crafted VSCode themes to elevate the coding experience and that strike the
+                            perfect balance between aesthetics and functionality.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://marketplace.visualstudio.com/publishers/lakshits11/" target="_blank">
+                                <i class="las la-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="cardContainer">
+                        <i class="fal fa-angles-right"></i>
+                        <h2>Many More</h2>
+                        <p>
+                            I have many more side and small projects that I have worked on to improve my experience and
+                            skills. You can check them out on my GitHub profile.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/lakshits11/" target="_blank">
+                                <i class="lab la-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="span"></div>
+        <div class="span"></div>
+
+        <div class="contact-section" id="contact">
+            <p id="c1">What's Next</p>
+            <p id="c2">Get in touch</p>
+            <p id="c3">
+                I'd love to hear from you! If you have a project in mind, or just want to say hi, send me an email.
+            </p>
+            <a href="mailto:lakshits11@gmail.com" target="_blank">
+                <button>Mail me</button>
+            </a>
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="main.js"></script>
     </body>
