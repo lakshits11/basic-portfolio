@@ -1,14 +1,7 @@
-/* -- Glow effect -- */
+// Glow effect
 const blob = document.getElementById("blob");
 window.onpointermove = ({ clientX, clientY }) =>
-    blob.animate(
-        { left: `${clientX}px`, top: `${clientY}px` },
-        { duration: 1500, fill: "forwards" }
-    );
-
-$(function () {
-    $(".navbar-icon").click(() => $(".navbar").toggleClass("active"));
-});
+    blob.animate({ left: `${clientX}px`, top: `${clientY}px` }, { duration: 1500, fill: "forwards" });
 
 // 3D Image Effect
 if (window.matchMedia("(min-width: 767px)").matches) {
@@ -32,10 +25,8 @@ if (window.matchMedia("(min-width: 767px)").matches) {
 /* For smooth scroll behaviour */
 // Get all the links with class 'scroll-link'
 const linksss = document.querySelectorAll(".scc");
-// Loop through each link and add an event listener
 linksss.forEach((link) => {
     link.addEventListener("click", (event) => {
-        // Prevent default anchor behavior
         event.preventDefault();
         // Get the href attribute of the link and remove the '#' character
         const targetId = link.getAttribute("href").substring(1);
@@ -51,26 +42,12 @@ linksss.forEach((link) => {
     });
 });
 
-/* to get a cross icon when clicking bolt icon in navbar */
-// const navIcon = document.getElementById("nav-bars-icon");
-// navIcon.addEventListener("click", () => {
-//     navIcon.classList.toggle("bolt-icon");
-//     navIcon.classList.toggle("unbolt-icon");
-//     document.getElementById("nav-close-icon").classList.toggle("hide"); // Show/hide cross icon
-// });
-
-// const navIcon = document.getElementById("nav-bars-icon");
-
-// navIcon.addEventListener("click", () => {
-//   navIcon.classList.toggle("bolt-icon");
-//   navIcon.classList.toggle("unbolt-icon");
-// //   navIcon.classList.toggle("fa-bolt");
-// //   navIcon.classList.toggle("fa-bolt");
-//   document.getElementById("nav-close-icon").classList.toggle("hide");
-// });
+// navigate icon changer
+$(function () {
+    $(".navbar-icon").click(() => $(".navbar").toggleClass("active"));
+});
 
 //working navbar show/hide button
-// currently navbar gayab ho rkha, wo figure out krke fir dekhte hai
 const navIcon = document.getElementById("nav-bars-icon");
 navIcon.addEventListener("click", () => {
     navIcon.classList.toggle("fa-solid");
@@ -112,16 +89,20 @@ link.addEventListener("mouseout", (event) => {
     event.target.innerText = event.target.dataset.value;
 });
 
-// document.querySelectorAll("span").forEach((link) => {
-//     link.addEventListener("mouseover", (event) => {
-//         jumbleLetters(event.target);
-//     });
-//     link.addEventListener("mouseout", (event) => {
-//         event.target.innerText = event.target.dataset.value;
-//     });
-// });
+// Showing alert for mobile users
+const delayBeforeAlert = 500;
+function displayConfirmationAlert() {
+    const hasConfirmationBeenShown = localStorage.getItem("confirmationShown");
+    if (!hasConfirmationBeenShown) {
+        window.alert(
+            "👋 Welcome!\n\n🖥️ This portfolio is designed to be best enjoyed on desktop/PC.\n\n⚠️ If you have an adblocker enabled, some content may be hidden. Please consider disabling it to fully experience my site.\n\n🌟 Enjoy your visit!\n Lakshit Somani 😀"
+        );
+        localStorage.setItem("confirmationShown", "true");
+    }
+}
+setTimeout(displayConfirmationAlert, delayBeforeAlert);
 
-/* loader animation */
+// /* loader animation */
 // window.addEventListener("load", function () {
 //     setTimeout(function () {
 //         document.querySelector("body").classList.remove("load");
