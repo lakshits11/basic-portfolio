@@ -43,17 +43,17 @@ linksss.forEach((link) => {
 });
 
 // navigate icon changer
-$(function () {
-    $(".navbar-icon").click(() => $(".navbar").toggleClass("active"));
-});
+// $(function () {
+//     $(".navbar-icon").click(() => $(".navbar").toggleClass("active"));
+// });
 
 //working navbar show/hide button
-const navIcon = document.getElementById("nav-bars-icon");
-navIcon.addEventListener("click", () => {
-    navIcon.classList.toggle("fa-solid");
-    navIcon.classList.toggle("fa-light");
-    document.getElementById("nav-close-icon").classList.toggle("hide"); // Show/hide cross icon
-});
+// const navIcon = document.getElementById("nav-bars-icon");
+// navIcon.addEventListener("click", () => {
+//     navIcon.classList.toggle("fa-solid");
+//     navIcon.classList.toggle("fa-light");
+//     document.getElementById("nav-close-icon").classList.toggle("hide"); // Show/hide cross icon
+// });
 
 // Jumbled Words Effect
 const letters = "abcdefghijklmnopqrstuvwxyz";
