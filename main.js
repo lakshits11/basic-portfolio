@@ -90,12 +90,12 @@ link.addEventListener("mouseout", (event) => {
 });
 
 // Showing alert for mobile users
-const delayBeforeAlert = 500;
+const delayBeforeAlert = 800;
 function displayConfirmationAlert() {
     const hasConfirmationBeenShown = localStorage.getItem("confirmationShown");
     if (!hasConfirmationBeenShown) {
         window.alert(
-            "👋 Welcome!\n\n🖥️ This portfolio is designed to be best enjoyed on desktop/PC.\n\n⚠️ If you have an adblocker enabled, some content may be hidden. Please consider disabling it to fully experience my site.\n\n🌟 Enjoy your visit!\n Lakshit Somani 😀"
+            "👋 Welcome!\n\n🖥️ This portfolio is designed to be best enjoyed on desktop/PC.\n\n⚠️ If you have an adblocker and dark mode enabled, some content may be hidden. Please consider disabling it to fully experience my site.\n\n🌟 Enjoy your visit!\n Lakshit Somani 😀"
         );
         localStorage.setItem("confirmationShown", "true");
     }
