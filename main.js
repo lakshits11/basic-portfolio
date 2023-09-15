@@ -43,9 +43,9 @@ linksss.forEach((link) => {
 });
 
 // navigate icon changer
-// $(function () {
-//     $(".navbar-icon").click(() => $(".navbar").toggleClass("active"));
-// });
+$(function () {
+    $(".navbar-icon").click(() => $(".navbar").toggleClass("active"));
+});
 
 //working navbar show/hide button
 // const navIcon = document.getElementById("nav-bars-icon");
